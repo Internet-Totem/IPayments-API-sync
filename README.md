@@ -9,7 +9,7 @@
 
 ### Асинхронный код
 
-Точно такой же пример, но написанный на асинхронном коде (pyTelegramBotAPI -> **aiogram**; requests -> **aiohttp**) можно посмотреть здесь.
+Точно такой же пример, но написанный на асинхронном коде (pyTelegramBotAPI -> **aiogram**; requests -> **aiohttp**) можно посмотреть [здесь](https://github.com/Internet-Totem/IPayments-API-async).
 
 
 ## Начало работы
