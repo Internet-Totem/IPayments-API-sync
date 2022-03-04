@@ -19,7 +19,7 @@ def send_request(request_url, method, params=None):
 class api:
     def __init__(self, token):
         self.token = token
-        self.request_url = 'http://api.i-payments.xyz/' + token + '/'
+        self.request_url = 'https://api.i-payments.xyz/' + token + '/'
 
         send_request(self.request_url, 'getMe')
 
