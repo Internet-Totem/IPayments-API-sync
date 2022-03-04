@@ -24,7 +24,7 @@ def start(message):
             try:
                 invoice = api_help.api(TOKEN_IPAYMENTS).checkInvoice(invoice_id)
             except:
-                bot.send_message(message.chat.id, '*Произошла ошибка при попытке получить информацию о счете.* Скорее всего, где-то произошла ошибка -> счет был создан.')
+                bot.send_message(message.chat.id, '*Произошла ошибка при попытке получить информацию о счете.* Скорее всего, где-то произошла ошибка (счет не был создан).')
                 return 0
 
             if invoice['result']['status'] == 'PAID':
