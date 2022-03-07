@@ -10,7 +10,7 @@ bot = telebot.TeleBot(token=TOKEN_TELEGRAM, parse_mode='Markdown')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    if len(message.text.split('_')) == 1: # Стандартная комманда
+    if len(message.text.split(' ')) == 1: # Стандартная комманда
         reply = types.ReplyKeyboardMarkup(resize_keyboard=True)
         reply.add(types.KeyboardButton(text='Купить товар'))
         bot.send_message(message.chat.id, '*Приветствую в Enot Shop!*', reply_markup=reply)
